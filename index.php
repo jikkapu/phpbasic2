@@ -11,12 +11,20 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        $array1=['a'=>23,'b'=>34,'c'=>56];
-        print_r($array1);
-        echo '<hr>';
         
-        foreach ($array1 as $k=>$v){
-            echo 'key :'.$k.' / '.$v.'<br>';
+       // print_r($array1);
+        //echo '<hr>';
+        
+      //  foreach ($array1 as $k=>$v){
+      //      echo 'key :'.$k.' / '.$v.'<br>';
+      //  }
+        
+        $array2=['dmax','volvo','hitashi'];
+        echo '<hr>';
+        echo $array2[1];
+        echo '<hr>';
+        for($x=0;$x<count($array2);$x++){
+            echo $array2[$x].'<br>';
         }
         ?>
     </body>
